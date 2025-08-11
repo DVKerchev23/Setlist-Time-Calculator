@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concert Setlist Time Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Concert Setlist Time Calculator</h1>
+        <p>Enter the duration of each song and click 'Add song' or press Enter, input the time between songs (if needed) to calculate the total concert time.</p>
+
+        <div id="input-container">
+            </div>
+
+        <div class="footer">
+            <div class="separator">
+                <label for="time-between-songs">Time Between Songs:</label> 
+                <input type="text" id="time-between-songs" placeholder="e.g., 2:30">
+            </div>
+
+            <div class="controls">
+                <button id="add-song">Add Song</button>
+                <button id="calculate-button">Calculate Total</button>
+                <button id="reset-button">Reset</button>
+            </div>
+
+            <p>Total Concert Time: <span id="totalTime">0 minutes, 0 seconds</span></p>
+            <p>This calculator was made by Damyan V.Kerchev especially and exclusively for all <a href="https://tsenakoev.com/">Tsena Koev</a> members</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

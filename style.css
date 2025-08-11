@@ -1,0 +1,133 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: flex-start; /* Aligns content to the top */
+    flex-direction: column;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto; /* Centers the container on the page */
+}
+
+/* This is the key change to fix scrolling */
+#input-container {
+    max-height: 400px; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 15px; /* Add some padding for the scrollbar */
+}
+
+.song-input, .separator {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+label {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.separator {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 2px solid #ecf0f1;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: 600;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+#add-song {
+    background-color: #2ecc71;
+    color: white;
+}
+
+#add-song:hover {
+    background-color: #27ae60;
+}
+
+#calculate-button {
+    background-color: #3498db;
+    color: white;
+}
+
+#calculate-button:hover {
+    background-color: #2980b9;
+}
+
+#reset-button {
+    background-color: #e74c3c;
+    color: white;
+}
+
+#reset-button:hover {
+    background-color: #c0392b;
+}
+
+.footer {
+    border-top: 2px solid #ecf0f1;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+#totalTime {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
